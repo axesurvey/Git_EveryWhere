@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hello xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="1">
+   <capabilities>
+      <capability>urn:ietf:params:netconf:base:1.0</capability>
+      <capability>urn:com:ericsson:ebase:0.1.0</capability>
+      <capability>urn:com:ericsson:ebase:1.1.0</capability>
+      <capability>urn:ietf:params:netconf:capability:writable-running:1.0</capability>
+      <capability>urn:ietf:params:netconf:capability:rollback-on-error:1.0</capability>
+      <capability>urn:ietf:params:netconf:capability:notification:1.0</capability>
+      <capability>urn:ericsson:com:netconf:action:1.0</capability>
+   </capabilities>
+<!--   <session-id>1</session-id> -->
+</hello>
+]]>]]>
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>7</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>7</cellId>
+            <physicalLayerCellIdGroup>99</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>0</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=7</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>8</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>8</cellId>
+            <physicalLayerCellIdGroup>99</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>1</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=8</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>9</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>9</cellId>
+            <physicalLayerCellIdGroup>99</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>2</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=9</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>10</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>10</cellId>
+            <physicalLayerCellIdGroup>100</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>0</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=10</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>11</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>11</cellId>
+            <physicalLayerCellIdGroup>100</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>1</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=11</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<rpc xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="9">
+  <edit-config>
+    <config>
+      <ManagedElement xmlns="urn:com:ericsson:ecim:ComTop">
+        <managedElementId>1</managedElementId>
+        <!-- ENodeBFunction configuration -->
+        <ENodeBFunction xmlns="urn:com:ericsson:ecim:ERBS_NODE_MODEL_D">
+          <eNodeBFunctionId>1</eNodeBFunctionId>
+          <!-- EutranCellTDD configuration, rn_basic -->
+          <EUtranCellTDD>
+            <eUtranCellTDDId>12</eUtranCellTDDId>
+            <earfcn>40000</earfcn>
+            <cellId>12</cellId>
+            <physicalLayerCellIdGroup>100</physicalLayerCellIdGroup>
+            <physicalLayerSubCellId>2</physicalLayerSubCellId>
+            <tac>3635</tac>
+            <sectorCarrierRef>ManagedElement=1,ENodeBFunction=1,SectorCarrier=12</sectorCarrierRef> 
+            <channelBandwidth>10000</channelBandwidth>
+            <changeNotification struct="ChangeNotificationSIBs"></changeNotification>
+            <mappingInfo struct="MappingInfoSIBs"></mappingInfo>
+            <siPeriodicity struct="PeriodicitySI"></siPeriodicity>
+            <systemInformationBlock6 struct="SIB6"></systemInformationBlock6>
+            <systemInformationBlock7 struct="SIB7"></systemInformationBlock7>
+            <systemInformationBlock8 struct="SIB8"></systemInformationBlock8>
+            <systemInformationBlock3 struct="SIB3"></systemInformationBlock3>
+            <eutranCellCoverage struct="EutranCellArea"></eutranCellCoverage>
+            <timeOfLastModification></timeOfLastModification>
+            <acBarringForMoSignalling struct="AcBarringConfig"></acBarringForMoSignalling>
+            <acBarringForMoData struct="AcBarringConfig"></acBarringForMoData>
+            <ssacBarringForMMTELVoice struct="AcBarringConfig"></ssacBarringForMMTELVoice>
+            <ssacBarringForMMTELVideo struct="AcBarringConfig"></ssacBarringForMMTELVideo>
+            <acBarringForCsfb struct="AcBarringConfig"></acBarringForCsfb>
+            <acBarringPresence struct="AcBarringPresence"></acBarringPresence>
+			<subframeAssignment>2</subframeAssignment>
+			<specialSubframePattern>7</specialSubframePattern>
+          </EUtranCellTDD>
+        </ENodeBFunction>
+      </ManagedElement>
+    </config>
+  </edit-config>
+</rpc>
+]]>]]>
+
+
+<rpc  xmlns="urn:ietf:params:xml:ns:netconf:base:1.0" message-id="close-session">
+  <close-session></close-session>
+</rpc>
+]]>]]>
+
